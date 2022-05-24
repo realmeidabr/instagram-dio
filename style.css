@@ -1,0 +1,280 @@
+* {
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+  font-size: 14px;
+}
+
+header {
+  margin-top: 90px;
+}
+
+body {
+  width: 100%;
+  max-height: 100vh;
+  background-color: hsl(0, 0%, 98%);
+}
+
+.wrapper {
+  width: 80%;
+  display: flex;
+  flex-grow: 0;
+  flex-shrink: 0;
+  justify-content: center;
+  margin: auto;
+  padding-bottom: 32px;
+}
+
+.ig-mock {
+  width: 50%;
+  height: 580px;
+  display: flex;
+  flex-basis: 380px;
+  background-image: url('./assets/ig-mockup.png');
+  background-repeat: no-repeat;
+  margin: 0 32px 12px 0;
+}
+
+.ig-cards {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+  height: 580px;
+  flex-basis: 380px;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  background-color: hsl(0, 0%, 100%);
+  width: 100%;
+  padding: 1.3rem 0;
+  border: 1px solid lightgray;
+}
+
+.cards:nth-child(1) {
+  height: 313px;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.ig-logo {
+  height: 51px;
+  margin-top: 36px;
+  margin-bottom: 12px;
+}
+
+.profile-pic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-top: 8px;
+  margin-bottom: 16px;
+}
+
+.profile-pic img {
+  height: 84px;
+}
+
+.btn-continue-as {
+  height: 30px;
+  background-color: hsl(204, 100%, 48%);
+  color: hsl(0, 0%, 100%);
+  font-weight: 500;
+  padding: 5px 9px 5px 9px;
+  border-radius: 3px;
+  border: none;
+  margin-top: 16px;
+  margin-bottom: 20px;
+}
+
+.btn-continue-as:hover {
+  cursor: pointer;
+}
+
+.remove-account {
+  margin-bottom: 20px;
+}
+
+.remove-account a {
+  text-decoration: none;
+  color: hsl(204, 100%, 48%);
+  font-weight: 600;
+}
+
+.cards:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 70px;
+  flex: 0 0 70px;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.not-you {
+  color: hsl(0, 0%, 63%);
+  margin: 0px;
+  padding-bottom: 5px;
+}
+
+.switch {
+  color: hsl(0, 0%, 63%);
+  margin: 0px;
+  text-decoration: none;
+}
+
+.link-blue {
+  text-decoration: none;
+  color: hsl(204, 100%, 48%);
+  font-weight: 600;
+}
+
+.get-the-app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.get-app { 
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.download { 
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.app-download {
+  height: 40px;
+  width: 136px;
+  background-size: cover;
+  margin: 4px;
+  border-radius: 5px;
+}
+
+.app-download:nth-child(1) {
+  background-image: url('./assets/apple-button.png');
+}
+
+.app-download:nth-child(2) {
+  background-image: url('./assets/play-button.png');
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  display: flex;
+  margin: 0 10px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: hsl(0, 0%, 63%);
+  font-size: 12px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+footer ul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+footer ul li {
+  margin-top: 10px;
+}
+
+footer section:nth-child(3) {
+  display: flex;
+  margin: 20px 10px;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  color: hsl(0, 0%, 63%);
+}
+
+footer section:nth-child(3) div:nth-child(1) {
+  margin-right: 20px;
+  font-size: 12px;
+}
+
+footer section:nth-child(3) div:nth-child(2) {
+  font-size: 12px;
+}
+
+/* media queries */
+
+@media (max-width: 1024px) {
+  .wrapper {
+    width: 90%;
+  }
+}
+
+@media (max-width: 988px) {
+  .wrapper {
+    width: 90%;
+  }
+
+  .ig-mock {
+    display: none;
+  }
+
+  .ig-cards {
+    width: 100%;
+  }
+}
+
+@media (max-width: 450px) {
+  body {
+    background-color:hsl(0, 0%, 100%);
+  }
+
+  .wrapper {
+    width: 90%;
+  }
+
+  .ig-mock {
+    display: none;
+  }
+
+  .cards {
+    width: 100%;
+    border: transparent;
+  }
+}
+
+@media (max-width: 320px) {
+  .download {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 248px) {
+  footer section:nth-child(3) {
+    flex-direction: column;
+  }
+  footer section:nth-child(3) div:nth-child(2) {
+    margin-top: 20px;
+  }
+}
